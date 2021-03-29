@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>title</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/designshenanigans.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,9 +23,9 @@
             <nav>
                 <div class="nav-menu">
                     <ul>
-                        <li><a href="#">Set Up</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Explore Your Pi</a></li>
+                        <li><a href="#carouselExampleControls">Set Up</a></li>
+                        <li><a href="#carouselControls">About</a></li>
+                        <li><a href="#carouselControls1">Explore Your Pi</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,7 +81,10 @@
                             <img src="/Media/Setup2.svg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="/Media/what3.svg" class="d-block w-100" alt="...">
+                            <img src="/Media/Setup3.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item citem">
+                            <img src="/Media/Setup4.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
@@ -97,23 +102,73 @@
         </div>
 
         <div class="row my-row4">
-            <div class="col">
-                col1 row1
+            <div class="col flex-column mycol2">
+                <div id="carouselControls1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Media/Explore.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item citem">
+                            <img src="/Media/Python.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item citem">
+                            <img src="/Media/SenseHat.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Let’s do something!</h3>
+                            <div class="col-5  flex-column dosmt">
+
+                                <p>
+                                    Let’s Display the text “Astro Pi is awesome” on your Sense HAT’s LED display. <br>-Start by opening up the Thonny IDE program. <br>-Make sure you have the following lines of code in your Python program to set up your
+                                    connection with the Sense HAT.
+                                </p>
+                            </div>
+
+                            <div class="col  flex-column  colcode">
+                                <div class="codesnippet">
+                                    <code><span class="codecolor">from</span>  sense_hat <span class="codecolor">import</span> SenseHat
+                               <br> sense = SenseHat() </code>
+
+                                    <p class="codesnippet">Add this code to display a message on the Sense HAT’s LED matrix.</p>
+                                </div>
+
+                                <code>sense.show_message(<span class="codecolor">"Hello World"</span></code>
+                                <p class="codesnippet">
+
+                                    Press Play to see it in action!
+                                    <br><br> -Change the words in the quotes ("") to see a different message.
+                                </p>
+
+
+                            </div>
+
+
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                        </a>
+                        <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
             </div>
-            <div class="col">
-                col 2 row 2
-            </div>
+
         </div>
 
-    </div>
 
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 <!-- MY JS CODE -->
